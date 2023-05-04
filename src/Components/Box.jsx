@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import {PlayerContext} from '../contexts/Player'
+
 export const Box = ({setBox, box}) => {
     const {player, setPlayer} = useContext(PlayerContext);
 
 
     const handleOnClick= () => {
-        if (box === ''){
+        if (box === 0){
             if ( player === 'Player 1'){
                 setBox(1)
                 setPlayer('Player 2')
@@ -18,7 +19,7 @@ export const Box = ({setBox, box}) => {
     }
     return (
         <div className="box" onClick= {handleOnClick}>
-        <p>{box === 1 ? 'X' : box === -1 ? 'O' : box }</p>
+            <p>{box === 1 ? 'X' : box === -1 ? 'O' : null }</p>
         </div>
     )
 }

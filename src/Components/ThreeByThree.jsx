@@ -3,15 +3,21 @@ import {useState} from 'react'
 
 export const ThreeByThree = () => {
 
-const [box1, setBox1] = useState('')
-const [box2, setBox2] = useState('')
-const [box3, setBox3] = useState('')
-const [box4, setBox4] = useState('')
-const [box5, setBox5] = useState('')
-const [box6, setBox6] = useState('')
-const [box7, setBox7] = useState('')
-const [box8, setBox8] = useState('')
-const [box9, setBox9] = useState('')
+const [box1, setBox1] = useState(0)
+const [box2, setBox2] = useState(0)
+const [box3, setBox3] = useState(0)
+const [box4, setBox4] = useState(0)
+const [box5, setBox5] = useState(0)
+const [box6, setBox6] = useState(0)
+const [box7, setBox7] = useState(0)
+const [box8, setBox8] = useState(0)
+const [box9, setBox9] = useState(0)
+
+const grid = [
+    [box1, box2, box3],
+    [box4, box5, box6], 
+    [box7, box8, box9]
+]
 
 return (
     <div className="box-container">
@@ -26,7 +32,5 @@ return (
         <Box setBox={setBox9} box={box9}/>
 
     </div>
-    
 )
-
 }
