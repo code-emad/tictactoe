@@ -1,0 +1,18 @@
+.box-container {
+  height: 50vw;
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2% 2%;
+  background-color: black
+}
+
+.box {
+  height: 32%;
+  width: 32%;
+  justify-content: flex-start;
+
+
+  
+}
