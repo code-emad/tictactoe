@@ -13,24 +13,29 @@ const [box7, setBox7] = useState(0)
 const [box8, setBox8] = useState(0)
 const [box9, setBox9] = useState(0)
 
+const [counter, setCounter] = useState(0)
+
 const grid = [
-    [box1, box2, box3],
-    [box4, box5, box6], 
-    [box7, box8, box9]
+    box1, box2, box3,
+    box4, box5, box6, 
+    box7, box8, box9
 ]
 
 return (
+    <div>
+        <p>counter:{counter}</p>
     <div className="box-container">
-        <Box setBox={setBox1} box={box1}/>
-        <Box setBox={setBox2} box={box2}/>
-        <Box setBox={setBox3} box={box3}/>
-        <Box setBox={setBox4} box={box4}/>
-        <Box setBox={setBox5} box={box5}/>
-        <Box setBox={setBox6} box={box6}/>
-        <Box setBox={setBox7} box={box7}/>
-        <Box setBox={setBox8} box={box8}/>
-        <Box setBox={setBox9} box={box9}/>
+        <Box setBox={setBox1} box={box1} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox2} box={box2} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox3} box={box3} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox4} box={box4} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox5} box={box5} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox6} box={box6} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox7} box={box7} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox8} box={box8} counter={counter} setCounter={setCounter}/>
+        <Box setBox={setBox9} box={box9} counter={counter} setCounter={setCounter}/>
 
+    </div>
     </div>
 )
 }
