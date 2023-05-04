@@ -2,17 +2,16 @@ import {Box} from './Box'
 import {useState} from 'react'
 
 export const ThreeByThree = () => {
-const [player, setPlayer]= useState(true);
 
-const [box1, setBox1] = useState(0)
-const [box2, setBox2] = useState(0)
-const [box3, setBox3] = useState(0)
-const [box4, setBox4] = useState(0)
-const [box5, setBox5] = useState(0)
-const [box6, setBox6] = useState(0)
-const [box7, setBox7] = useState(0)
-const [box8, setBox8] = useState(0)
-const [box9, setBox9] = useState(0)
+const [box1, setBox1] = useState('')
+const [box2, setBox2] = useState('')
+const [box3, setBox3] = useState('')
+const [box4, setBox4] = useState('')
+const [box5, setBox5] = useState('')
+const [box6, setBox6] = useState('')
+const [box7, setBox7] = useState('')
+const [box8, setBox8] = useState('')
+const [box9, setBox9] = useState('')
 
 return (
     <div className="box-container">
