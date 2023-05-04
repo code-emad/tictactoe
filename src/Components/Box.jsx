@@ -6,7 +6,6 @@ export const Box = ({setBox, box, setCounter, counter}) => {
 
  
     const handleOnClick= () => {
-console.log(counter)
         if (box === 0){
             if ( player === 'Player 1'){
                 setBox(1)
