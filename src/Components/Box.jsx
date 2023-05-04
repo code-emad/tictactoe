@@ -5,13 +5,15 @@ export const Box = ({setBox, box}) => {
 
 
     const handleOnClick= () => {
-        if ( player === 'Player 1'){
-            setBox(1)
-            setPlayer('Player 2')
-        }
-        if ( player === 'Player 2'){
-            setBox(-1)
-            setPlayer('Player 1')
+        if (box === ''){
+            if ( player === 'Player 1'){
+                setBox(1)
+                setPlayer('Player 2')
+            }
+            if ( player === 'Player 2'){
+                setBox(-1)
+                setPlayer('Player 1')
+            }
         }
     }
     return (
