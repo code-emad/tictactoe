@@ -25,6 +25,7 @@ const grid = [
 return (
     <div>
         <p>counter:{counter}</p>
+ 
     <div className="box-container">
         <Box setBox={setBox1} box={box1} counter={counter} setCounter={setCounter}/>
         <Box setBox={setBox2} box={box2} counter={counter} setCounter={setCounter}/>
