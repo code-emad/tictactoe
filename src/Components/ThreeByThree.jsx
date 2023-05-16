@@ -25,7 +25,7 @@ const grid = [
 return (
     <div>
         <p>counter:{counter}</p>
-        <p>{checkWinOrDraw(grid)}</p>
+        <p>{checkWinOrDraw(grid) !== undefined ? checkWinOrDraw(grid) : counter === 9 ? 'Draw' : null}</p>
     <div className="box-container">
         <Box setBox={setBox1} box={box1} counter={counter} setCounter={setCounter}/>
         <Box setBox={setBox2} box={box2} counter={counter} setCounter={setCounter}/>
