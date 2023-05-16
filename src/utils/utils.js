@@ -16,5 +16,4 @@ exports.checkWinOrDraw = (grid) => {
     if (grid[2] + grid[4] + grid[6] === 3) { return 'Player 1 Wins'}
     if (grid[0] + grid[4] + grid[8] === -3) { return 'Player 2 Wins'}
     if (grid[2] + grid[4] + grid[6] === -3) { return 'Player 2 Wins'}
-    return 1 + null
 }
