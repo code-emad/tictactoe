@@ -22,10 +22,24 @@ const grid = [
     box7, box8, box9
 ]
 
+const handleReset = () => {
+    setBox1(0)
+    setBox2(0)
+    setBox3(0)
+    setBox4(0)
+    setBox5(0)
+    setBox6(0)
+    setBox7(0)
+    setBox8(0)
+    setBox9(0)
+    setCounter(0)
+}
+
 return (
     <div>
         <p>counter:{counter}</p>
         <p>{checkWinOrDraw(grid) !== undefined ? checkWinOrDraw(grid) : counter === 9 ? 'Draw' : null}</p>
+        <button onClick={handleReset}>Reset</button>
     <div className="box-container">
         <Box setBox={setBox1} box={box1} counter={counter} setCounter={setCounter}/>
         <Box setBox={setBox2} box={box2} counter={counter} setCounter={setCounter}/>
