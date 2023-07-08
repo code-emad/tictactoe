@@ -2,14 +2,10 @@ exports.checkWinOrDraw = (grid) => {
     const player1win = "Player 1 Wins"
     const player2win = "Player 2 Wins"
     //row win condition
-    console.log(true, 0)
     for(let i = 0; i < 9; i += 3) {
-        console.log(true, 2.5)
-        console.log(i, grid[i])
         if (grid[i] + grid[i+1] + grid[i+2] === 3) {return player1win}
         if (grid[i] + grid[i+1] + grid[i+2] === -3) {return player2win}
     }
-    console.log(true, 2)
     //column win condition
     for(let i = 0; i < 3; i += 1) {
         if (grid[i] + grid[i+3] + grid[i+6] === 3) {return player1win}
