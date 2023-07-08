@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="title text--top">Tic Tac Toe</h1>
-        <p>{player}</p>
+        <p className="player">{player}</p>
         
       </header>
       <ThreeByThree />
