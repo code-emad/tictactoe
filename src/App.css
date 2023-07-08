@@ -1,3 +1,7 @@
+* {
+  outline: dashed red 1px;
+}
+
 .box-container {
   height: 50vw;
   width: 50vw;
@@ -13,7 +17,4 @@
   width: 32%;
   justify-content: flex-start;
   background-color:white;
-
-
-  
 }

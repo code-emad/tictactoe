@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <h1 class="">
           Tic Tac Toe
-        </p>
+        </h1>
         <p>
           {player}
         </p>
