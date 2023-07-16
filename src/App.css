@@ -14,6 +14,13 @@
   margin: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+}
+
 .player {
   font-family: "Poppins", sans-serif;
   font-size: 6rem;
