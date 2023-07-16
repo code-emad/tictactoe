@@ -4,6 +4,10 @@
   outline: dashed red 1px;
 }
 
+body {
+  background: #5AC3B0;
+}
+
 .title {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -27,6 +31,13 @@
   font-weight: 600;
   padding-left: 1rem;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .player {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
 }
 
 .box-container {

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="title text--top">Tic Tac Toe</h1>
+        <h1 className="title">Tic Tac Toe</h1>
         <p className="player">{player}</p>
         
       </header>
