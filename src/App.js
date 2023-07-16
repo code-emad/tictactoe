@@ -11,7 +11,6 @@ function App() {
       <header className="App-header">
         <h1 className="title">Tic Tac Toe</h1>
         <p className="player">{player}</p>
-        
       </header>
       <ThreeByThree />
     </div>
