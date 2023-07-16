@@ -13,7 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 12rem;
   font-weight: 600;
-  color: #1a1919;
+  color: #F7CD46;
   text-shadow: -0.04em -0.05em 0.03em rgb(106, 106, 106, 0.5);
   margin: 0;
 }
@@ -27,15 +27,16 @@ body {
 
 .player {
   font-family: "Poppins", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
   padding-left: 1rem;
   margin: 0;
+  color: #7C5AC3;
 }
 
 @media screen and (max-width: 600px) {
   .player {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 }
