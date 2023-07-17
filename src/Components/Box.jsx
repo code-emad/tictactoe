@@ -21,7 +21,7 @@ export const Box = ({setBox, box, setCounter, counter}) => {
     }
     return (
         <div className="box" onClick= {handleOnClick}>
-            <p>{box === 1 ? 'X' : box === -1 ? 'O' : null }</p>
+            <p className={`${box === 1 ? 'text-white' : 'text-black'}`}>{box === 1 ? 'X' : box === -1 ? 'O' : null }</p>
         </div>
     )
 }
