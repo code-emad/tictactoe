@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="title">Tic Tac Toe</h1>
-        <p className="player">{player}</p>
+        <p className="player">{player === "Player 1" ? "Player X" : "Player O"}</p>
       </header>
       <ThreeByThree />
     </div>
