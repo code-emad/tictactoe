@@ -7,14 +7,14 @@ export const Box = ({setBox, box, setCounter, counter}) => {
  
     const handleOnClick= () => {
         if (box === 0){
-            if ( player === 'Player 1'){
+            if ( player === 'Player-1'){
                 setBox(1)
-                setPlayer('Player 2')
+                setPlayer('Player-2')
                 setCounter(counter+=1)
             }
-            if ( player === 'Player 2'){
+            if ( player === 'Player-2'){
                 setBox(-1)
-                setPlayer('Player 1')
+                setPlayer('Player-1')
                 setCounter(counter+=1)
             }
         }

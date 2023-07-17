@@ -21,13 +21,24 @@ body {
   }
 }
 
-.player {
+
+.Player-1  {
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
   font-weight: 600;
   padding-left: 1rem;
   margin: 0;
-  color: #7C5AC3;
+  color: ivory;
+  text-align: center;
+}
+
+.Player-2  {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  margin: 0;
+  color:darkslategray;
   text-align: center;
 }
 
