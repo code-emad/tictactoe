@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap");
 
 body {
-  background: #5AC3B0;
+  background: #5ac3b0;
 }
 
 .title {
@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 12rem;
   font-weight: 600;
-  color: #F7CD46;
+  color: #f7cd46;
   text-shadow: -0.04em -0.05em 0.03em rgb(106, 106, 106, 0.5);
   margin: 0;
 }
@@ -21,8 +21,7 @@ body {
   }
 }
 
-
-.Player-1  {
+.Player-1 {
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
   font-weight: 600;
@@ -32,26 +31,29 @@ body {
   text-align: center;
 }
 
-.Player-2  {
+.Player-2 {
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
   font-weight: 600;
   padding-left: 1rem;
   margin: 0;
-  color:darkslategray;
+  color: darkslategray;
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-  .player {
+  .Player-1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .Player-2 {
     font-size: 2.5rem;
     line-height: 1.2;
   }
 }
 
 .reset {
-  margin-left: 1rem;
-  background-color: #c3ae5a;
+  background-color: #f55861;
   border: 2px solid #111;
   border-radius: 8px;
   color: #111;
@@ -61,38 +63,52 @@ body {
   padding: 0 2em;
   position: relative;
   transition-duration: 0.2s;
-
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
- .reset:active {
+@media screen and (max-width: 600px) {
+  .reset {
+  }
+}
+
+.reset:active {
   background-color: #c11300;
   color: white;
-} 
+}
 
 .reset:hover {
-  background-color: #a09f9f;
+  background-color: #4f575c;
 }
 
 .box-container {
   height: 50vw;
   width: 50vw;
   margin: auto;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 2% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+
   background-color: black;
 }
 
 .box {
-  height: 32%;
-  width: 32%;
-  justify-content: flex-start;
-  background-color: #5AC3B0;
+  /* height: 32%;
+  width: 32%; */
+  background-color: #5ac3b0;
 }
 
 .threebythreecontainer {
   text-align: center;
 }
 
-
-
+.checkwhowins {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f7cd46;
+  text-shadow: -0.04em -0.05em 0.03em rgb(106, 106, 106, 0.5);
+  margin: 0;
+}

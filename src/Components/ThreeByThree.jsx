@@ -41,7 +41,7 @@ const handleReset = () => {
 
 return (
     <div className='threebythreecontainer'>
-        <p>{checkWinOrDraw(grid) !== undefined ? checkWinOrDraw(grid) : counter === 9 ? 'Draw' : null}</p>
+        <p className='checkwhowins'>{checkWinOrDraw(grid) !== undefined ? checkWinOrDraw(grid) : counter === 9 ? 'Draw' : null}</p>
         <button className="reset" onClick={handleReset}>Reset</button>
     <div className="box-container">
         <Box setBox={setBox1} box={box1} counter={counter} setCounter={setCounter}/>
