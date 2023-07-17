@@ -1,8 +1,11 @@
 import {Box} from './Box'
 import {useState} from 'react'
 import {checkWinOrDraw} from '../utils/utils.js'
+import { PlayerContext } from "../contexts/Player";
+import { useContext } from "react";
 
 export const ThreeByThree = () => {
+const {player, setPlayer} = useContext(PlayerContext);
 
 const [box1, setBox1] = useState(0)
 const [box2, setBox2] = useState(0)
@@ -33,6 +36,7 @@ const handleReset = () => {
     setBox8(0)
     setBox9(0)
     setCounter(0)
+    setPlayer("Player-1")
 }
 
 return (
